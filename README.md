@@ -23,7 +23,8 @@ Our Data is Shakespeare's Will play .csv file.
 **How can we improve the process?**
   1. Remove unnecessary words (replacing uncommon or rare words with special tokens)
   
-**Training**
+**Training**  
+
 We've tried training the model using the RNN class but it took too much time. Instead, we've used the RNNTHEANO class  
 which we've found online. RNNTHEANO uses the GPU (instead of numpy calculations) which makes the traning much faster.
 In addition, we've used AWS EC2 instances in order to train the model. We've used a free instance t2.micro which took us a while.
