@@ -13,10 +13,10 @@ Our Data is Shakespeare's Will play .csv file.
 **Steps**
   1. Text tokenization using pythons nltk library
   2. Add our special tokens
-  3. Mapping words to vectors (words to indexes)
+  3. Mapping words to vectors (words to indexes and vice versa)
   4. Initialize RNN using pythons numpy library
   5. Perdict words probabilities
-  6. Train model
+  6. Train model using [sgd steps](http://scikit-learn.org/stable/modules/sgd.html)
   7. Generate sentences
   
   
@@ -49,7 +49,9 @@ we could've got much better results (more sgd steps/iterations).
 **Challenges**
    1. Using AWS
    2. Training with basic RNN (we gave up on that because it was too long, used theano instead).
-   
+
+
+[will]: will.jpg "Shakespeare's Will"
 
 
 
