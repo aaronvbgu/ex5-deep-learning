@@ -11,7 +11,7 @@ The Data is Shakespeare's Will play .csv file.
   
   
 **Steps**
-  1. Text tokenization using pythons nltk library
+  1. Text tokenization using pythons [nltk](http://www.nltk.org/) library
   2. Add our special tokens
   3. Mapping words to vectors (words to indexes and vice versa)
   4. Initialize RNN using pythons numpy library
@@ -22,6 +22,7 @@ The Data is Shakespeare's Will play .csv file.
   
 **How can we improve the process?**
   1. Remove unnecessary words (replacing uncommon or rare words with special tokens)
+  2. Use better EC2 instances
    
     
 **Training**  
@@ -43,6 +44,8 @@ We can get much better results with more training using g2.xlarge for example.
    * 2.1.21 beating disposed
    * 3.2.1 beloved lord
    * 2.2.62 meet at supper
+   
+[Results from S3](https://s3.amazonaws.com/ex5-shake-res/res)
 
 Our results are not pure shakespeare monologues but you can definetely see that there's logic and you can also sense the  
 medieval english language.
