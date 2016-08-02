@@ -15,8 +15,7 @@ class RNN:
         self.V = np.random.uniform(-np.sqrt(1./hidden_layer_size), np.sqrt(1./hidden_layer_size), (train_size, hidden_layer_size))
         self.W = np.random.uniform(-np.sqrt(1./hidden_layer_size), np.sqrt(1./hidden_layer_size), (hidden_layer_size, hidden_layer_size))
 
-    # predict words probabilities
-    def forward_propagation(self, time_steps):
+    def get_words_probabilities(self, time_steps):
         T = len(time_steps)
         s = np.zeros((T + 1, self.hidden_layer_size))
         s[-1] = np.zeros(self.hidden_layer_size)
@@ -26,7 +25,6 @@ class RNN:
             o[time_step] = softmax(self.V.dot(s[time_step]))
         return [o, s]
 
-    # get highest score
-    def predict(self, time_steps):
-        o, s = self.forward_propagation(time_steps)
+    def get_next_word(self, time_steps):
+        o, s = self.get_words_probabilities(time_steps)
         return np.argmax(o, axis=1)
