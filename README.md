@@ -48,9 +48,9 @@ we could've got much better results (more sgd steps/iterations).
 
 **Challenges**
    1. Using AWS
-   2. Training with basic RNN (we gave up on that because it was too long, used theano instead).
+   2. Training with basic RNN (we gave up on that because it was too long, used theano instead).  
 
-**Shakespeare's original will**
+
 ![will](will.jpg "Shakespeare's Will")
 
 
