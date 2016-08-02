@@ -23,14 +23,3 @@ Our goal is to build and train a model which will be able to predict the next wo
   1. Remove unnecessary words (replacing uncommon or rare words with special tokens)
 
 
-
-**Communities(Short Random Walks)**
-  1. Modularity: 0.765
-  2. Sizes: 13 7 5 5 7 5 5
-  3.![grpah1](imdb-graph1.png)
-
-
-**Communities(Greedy Optimization)**
-  1. Modularity: 0.765
-  2. Sizes: 7 5 13 5 5 5 7
-  3.![grpah1](imdb-graph2.png)
