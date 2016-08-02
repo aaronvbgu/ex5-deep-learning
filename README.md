@@ -7,9 +7,9 @@ RNN Based Text Generator
 ------------------------
 
 Our goal is to build and train a model which will be able to predict the next word.
-
-Our Data is Shakespeare's Will play .csv file.
-
+The Data is Shakespeare's Will play .csv file.
+  
+  
 **Steps**
   1. Text tokenization using pythons nltk library
   2. Add our special tokens
@@ -22,14 +22,16 @@ Our Data is Shakespeare's Will play .csv file.
   
 **How can we improve the process?**
   1. Remove unnecessary words (replacing uncommon or rare words with special tokens)
-  
+   
+    
 **Training**  
 
 We've tried training the model using the RNN class but it took too much time. Instead, we've used the RNNTHEANO class  
 which we've found online. RNNTHEANO uses the GPU (instead of numpy calculations) which makes the traning much faster.
 In addition, we've used AWS EC2 instances in order to train the model. We've used a free instance t2.micro which took us a while.
 We can get much better results with more training using g2.xlarge for example.
-  
+    
+    
 **Results**
    * 2.1.96 saying whoreson worst
    * 4.1.35 I will and sends me word
@@ -46,11 +48,13 @@ Our results are not pure shakespeare monologues but you can definetely see that 
 medieval english language.
 We can surely say that the results depend on the training time. If the traning was be longer,  
 we could've got much better results (more sgd steps/iterations).
-
+  
+  
 **Challenges**
    1. Using AWS
    2. Training with basic RNN (we gave up on that because it was too long, used theano instead).  
-
+  
+  
 
 ![will](will.jpg "Shakespeare's Will")
 
