@@ -41,10 +41,16 @@ Our Data is Shakespeare's Will play .csv file.
    * 3.2.1 beloved lord
    * 2.2.62 meet at supper
 
+Our results are not pure shakespeare monologues but you can definetely see that there's logic and you can also sense the  
+medieval english language.
+We can surely say that the results depend on the training time. If the traning was be longer,  
+we could've got much better results (more sgd steps/iterations).
+
 **Challenges**
    1. Using AWS
    2. Training with basic RNN (we gave up on that because it was too long, used theano instead).
-  
+   
+
 
 
 
